@@ -35,7 +35,9 @@ padding: 30px;
 margin-bottom: 30px;
 }
 img{
-    border-radius: 100px;
+    border-radius: 50%;
+    width: 5rem;
+    height:5rem;
     }
 .daniel img{
     border: solid 5px;
@@ -72,31 +74,30 @@ color:hsl(0, 0%, 70%);
     font-size: 11px;
  }
 .name, .namewh{
-    color:hsl(0, 0%, 100%);
     font-weight: 500;
-    display:grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 1fr 1fr;
+    display:flex;
  
-}
-.name img, .namewh img{
-    grid-row: 1/ span 2;
-}
-.name p, .namewh p{
-    margin-bottom: 0px;
-    grid-column: 2/4;
-}
-.fn{
-    margin-top: 15px;
-}
-.ver, .verwh{
-    grid-row:2/3 ;
-    margin:0;
 }
 .namewh{
     color:hsl(217, 19%, 35%);
     font-weight: 500;
 }
+h2{
+    margin-bottom:0px;
+    color: white;
+}
+h3{
+    margin-top:0px;
+}
+.fullname{
+    margin-left: 15px;
+}
+.namewh h2{
+    color:hsl(217, 19%, 35%);
+}
+
+
+
 @media screen and (min-width: 1440px){
 .container{
     display: grid;
@@ -132,7 +133,5 @@ body{
     grid-area: c;
     margin:0;
 }
-
-
 
 }
